@@ -1,50 +1,24 @@
-var map = "eeeeeeeeaeaaaeeaaaeeeeaeaaaeeaeeeaeeaeeaaeeeeeeee"
 var x = 1;
 var y = 1;
+document.getElementById("load").innerHTML = "JavaScript working!";
+document.getElementById("coordx").innerHTML = x;
+document.getElementById("coordy").innerHTML = y;
+
 function moveUp() {
 	document.getElementById("up").innerHTML ="OH NO A WALL"
 	document.getElementById("up").style.backgroundColor = "red";
-if map.substr(y-- * 6 + x,1) == "a" {
 	y--;
-	document.getElementById("down").style.backgroundColor = "green";
-	document.getElementById("left").style.backgroundColor = "green";
-	document.getElementById("right").style.backgroundColor = "green";
-	document.getElementById("up").style.backgroundColor = "green";
-} else {
-	document.getElementById("up").style.backgroundColor = "red";
-	document.getElementById("up").innerHTML ="OH NO A WALL";
-} 
-}
+	document.getElementById("coordy").innerHTML = y;
+	}
 function moveDown() {
-if map.substr(y++ * 6 + x,1) == "a" {
 	y++;
-	document.getElementById("down").style.backgroundColor = "green";
-	document.getElementById("left").style.backgroundColor = "green";
-	document.getElementById("right").style.backgroundColor = "green";
-	document.getElementById("up").style.backgroundColor = "green";
-} else {
-	document.getElementById("down").style.backgroundColor = "red";
-} 
-}
+	document.getElementById("coordy").innerHTML = y;
+	}
 function moveRight() {
-if map.substr(y * 6 + x++,1) == "a" {
 	x++;
-	document.getElementById("down").style.backgroundColor = "green";
-	document.getElementById("left").style.backgroundColor = "green";
-	document.getElementById("right").style.backgroundColor = "green";
-	document.getElementById("up").style.backgroundColor = "green";
-} else {
-	document.getElementById("right").style.backgroundColor = "red";
-} 
-}
+	document.getElementById("coordx").innerHTML = x;
+	}
 function moveLeft() {
-if map.substr(y * 6 + x--,1) == "a" {
-	X--;
-	document.getElementById("down").style.backgroundColor = "green";
-	document.getElementById("left").style.backgroundColor = "green";
-	document.getElementById("right").style.backgroundColor = "green";
-	document.getElementById("up").style.backgroundColor = "green";
-} else {
-	document.getElementById("left").style.backgroundColor = "red";
-} 
-}
+	x--;
+	document.getElementById("coordx").innerHTML = x;
+	}
