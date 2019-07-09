@@ -25,10 +25,10 @@ function moveDown() {
 		document.getElementById("left").style.backgroundColor = "green";
 		document.getElementById("right").style.backgroundColor = "green";
 		document.getElementById("up").style.backgroundColor = "green";
-		document.getElementById("coordx").innerHTML = y;
+		document.getElementById("coordy").innerHTML = y;
 	} else {
 		document.getElementById("down").style.backgroundColor = "red";
-		document.getElementById("up").innerHTML ="OH NO A WELL";
+		document.getElementById("down").innerHTML ="OH NO A WELL";
 	} 
 }
 function moveRight() {
@@ -41,7 +41,7 @@ function moveRight() {
 		document.getElementById("coordx").innerHTML = x;
 	} else {
 		document.getElementById("right").style.backgroundColor = "red";
-		document.getElementById("up").innerHTML ="OH NO A WEGALL";
+		document.getElementById("right").innerHTML ="OH NO A WEGALL";
 	} 
 }
 function moveLeft() {
@@ -54,6 +54,6 @@ function moveLeft() {
 		document.getElementById("coordx").innerHTML = x;
 	} else {
 		document.getElementById("left").style.backgroundColor = "red";
-		document.getElementById("up").innerHTML ="OH NO A WZHEUFGH";
+		document.getElementById("left").innerHTML ="OH NO A WZHEUFGH";
 	} 
 }
