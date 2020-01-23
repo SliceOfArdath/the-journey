@@ -3,25 +3,10 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
 <script src="theCode.js"></script> 
-<p id="load">Woah</p>
-<p id="coordx">none</p>
-<p id="coordy">none</p>
 </head>
 <body>
-<pre>
-                                                                   <button id="up" type="button" onclick="moveUp()">OMG PRESS ME SO Y'A CAN MOVE UP</button>
-
-
-    <button id="right" type="button" onclick="moveRight()">OMG PRESS ME SO Y'A CAN MOVE SIDISH!</button>                 <button id="down" type="button" onclick="moveDown()">OMG PRESS ME SO Y'A CAN MOVE DAWN</button>              <button id="left" type="button" onclick="moveLeft()">OMG PRESS ME SO Y'A CAN MOVE OTHER-SIDISH</button>
-
-    e e e e e e e
-    e a a a a a e
-    e a a a e e e
-    e a e a a a e
-    e a e e e a e
-    e a e e a a e
-    e e e e e e e
-</pre>
+<div id="diary"></div>
+<input id="commands" type="text" onsubmit="execComm()" placeholder="..."><button style="display: none;" id="hollowButton" onclick="execComm()">TEST</button>
 </body>
 </html>
 

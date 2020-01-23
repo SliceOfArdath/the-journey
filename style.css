@@ -12,7 +12,8 @@ article {
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("paper.gif");
+  background-color: black;
+  color: white;
 }
 button {
   background-color: #4CAF50;
@@ -24,5 +25,19 @@ button {
   cursor: pointer;
 }
 button:hover {
-	  background-color: green;
+	background-color: green;
+}
+#diary {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  height: 500px;
+  width: 500px;
+}
+#commands {
+  width: 498px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  height: 20px;
 }
