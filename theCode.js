@@ -1,18 +1,18 @@
 var distLeft = 10000;
 //celsius here
 var biome = {
-	trees = {freq = 0.1, type = "oak", size = 0.95},
-	temp = 25,
+	trees : {freq : 0.1, type : "oak", size : 0.95},
+	temp : 25,
 };
 var biomeWeight = {
 	trees : {freq : 0.1, type : "oak", size : 0.95},
-	temp = 20 //idk, seems low tho
+	temp : 20 //idk, seems low tho
 };
 var player = {
-	name = "",
-	sleep = 100,
-	alimentation = BodyNeeds(1, 1, 1, 1),
-	pyche = Psychologic(75, 50, 65)
+	name : "",
+	sleep : 100,
+	alimentation : BodyNeeds(1, 1, 1, 1),
+	pyche : Psychologic(75, 50, 65)
 };
 function Psychologic(happiness, sociability, confidence) {
 	this.happiness = happiness;
