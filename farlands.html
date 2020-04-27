@@ -12,6 +12,9 @@
             background-color: black;
             color: white;
         }
+        #logs {
+            font-size: 100%;
+        }
     </style>
 </head>
 
@@ -20,6 +23,8 @@
     <div style="display:none;">
         <img id="source" src="tiles.png">
     </div>
+    <button id="settings" onclick="document.getElementById('set').style.display = 'block'">Réglages</button>
+    <div id="set" style="display:none; color:grey;"><input type="text" id="size" alt="Size" value="100%"><button id="setSize" onclick="document.getElementById('logs').style.fontSize = document.getElementById('size').value">Changer la taille</button></div>
     <div id="logs"></div>
     <button id="credits" onclick="document.getElementById('cred').style.display = 'block'">Crédits</button>
     <div id="cred" style="display:none; color:grey;"></div>
@@ -39,8 +44,6 @@
             else t += "█";
         }
         document.getElementById("cred").innerHTML = "Auteur(e) : " + t;
-
-
         console.log(text.substr(0, 1000 * ((d - 1587765600000 + 86400000) / 86400000) + 1).length)
     </script>
 </body>
