@@ -43,7 +43,7 @@
             var powers = [365.25 * 24 * 60 * 60000, 24 * 60 * 60000, 60 * 60000, 60000, 1000, 1]
             var suffix = ['years', 'days', 'hours', 'minutes', 'seconds', 'miliseconds']
             for (let i = 0; i < powers.length; i++) {
-                if (Math.floor(a / powers[i])) r += Math.floor(a / powers[i]) + " " + suffix[i] + ", ", a -= Math.floor(a/powers[i])*powers[i];
+                if (Math.floor(a / powers[i])) r += Math.floor(a / powers[i]) + " " + suffix[i] + ( i<powers.length-1 ? ", " : ""), a -= Math.floor(a/powers[i])*powers[i];
             }
             return r
         }
@@ -54,7 +54,7 @@
         var tte = (text.length - (1000 * ((d - 1587765600000 + 86400000) / 86400000) + 1)) * 86400;
         var timeToEnd = toTimeFormat(tte);
         document.getElementById("logs").innerHTML = text.substr(0, l) + "...";
-        document.getElementById("misc").innerHTML += "(" + (Math.round(10000 * (l / text.length)) / 100) + "% publié;   " + l + " letters / " + text.length + " ("+(text.length - l)+" remaining);   ends in " + timeToEnd + " )";
+        document.getElementById("misc").innerHTML += "(" + (Math.round(10000 * (l / text.length)) / 100) + "% publié;   " + l + " letters / " + text.length + " ("+(text.length - l)+" remaining);   ends in " + timeToEnd + ")";
         function mixauthor() {
             var t = "";
             for (let i = 0; i < rand.int(12, 16); i++) {
