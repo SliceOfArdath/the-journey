@@ -44,11 +44,9 @@
         function mixauthor() {
             var t = "";
             for (let i = 0; i < rand.int(12, 16); i++) {
-                var r = rand.int(0, 3);
-                if (r == 0) t += "░";
-                else if (r == 1) t += "▒";
-                else if (r == 2) t += "▓";
-                else t += "█";
+                var r = rand.int(0, 3000);
+                r = String.fromCharCode(parseInt(r,16))
+                t += r
             }
             document.getElementById("cred").innerHTML = "Auteur(e) : " + t;
             setTimeout(mixauthor, 1000/120)
